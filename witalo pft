@@ -1,2 +1,39 @@
-print("Vamos iniciar agora!!!")
-print("O japa é gostoso!!!")
+from random import randint
+
+def gerar():
+    return random.randint(1,6)
+
+def repetir (x):
+    dado1=dado2=dado3=      \
+    dado4=dado5=dado6 = 0
+
+    for i in range(x):
+        dado = gerar() 
+
+        if(dado==1):
+            dado1 += 1
+        elif(dado==2):
+            dado2 += 1
+        elif(dado==3):
+            dado3 += 1
+        elif(dado==4):
+            dado4 += 1
+        elif(dado==5):
+            dado5 += 1
+        else:
+            dado6 += 1
+            
+
+    print('A porcentagem do numero 1 é: ', dado1,' vezes = ',(dado1/x)*100, ' %',
+    'A porcentagem do numero 2 é: ', dado2,' vezes = ',(dado2/x)*100, ' %',
+    'A porcentagem do numero 3 é: ', dado3,' vezes = ',(dado3/x)*100, ' %',
+    'A porcentagem do numero 4 é: ', dado4,' vezes = ',(dado4/x)*100, ' %',
+    'A porcentagem do numero 5 é: ', dado5,' vezes = ',(dado5/x)*100, ' %',
+    'A porcentagem do numero 6 é: ', dado6,' vezes = ',(dado6/x)*100, ' %')
+
+def main():
+    x = int(input('Quais os lançamentos de dados?'))
+    repete(x)
+    
+while True:
+    main()
